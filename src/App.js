@@ -1,23 +1,27 @@
-import logo from './logo.svg';
 import './App.css';
+import Phrases from './15kphrases';
+import { useEffect, useState } from 'react';
+
+function randomPhrase() {
+  return Phrases[Math.floor(Math.random() * Phrases.length)];
+}
 
 function App() {
+  const [phrase, setPhrase] = useState('');
+
+  useEffect(() => {
+    setPhrase(randomPhrase());
+  }, []);
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="container">
+      <h1>Fifteen Thousand Useful Phrases</h1>
+      <div className='phrase'>
+        {phrase}
+      </div>
+      <div className='btn'>
+        <button onClick={() => setPhrase(randomPhrase())}>New Phrase</button>
+      </div>
     </div>
   );
 }
