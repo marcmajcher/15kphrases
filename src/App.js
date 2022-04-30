@@ -22,6 +22,9 @@ function App() {
       <div className='btn'>
         <button onClick={() => setPhrase(randomPhrase())}>New Phrase</button>
       </div>
+      <footer>
+        <div> via <a href="https://www.gutenberg.org/ebooks/18362">gutenberg</a></div>
+      </footer>
     </div>
   );
 }

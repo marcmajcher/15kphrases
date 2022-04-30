@@ -1,16 +1,31 @@
 .phrase {
   text-align: center;
   font-size: 2em;
-  margin: 3em 0;
+  margin: 3em 0 1em 0;
 }
 
 h1 {
   text-align: center;
   margin-top: 2em;
   font-weight: 600;
-  font-size:4em;
+  font-size: 4em;
 }
 
 .btn {
   text-align: center;
+}
+
+footer {
+  margin: 1em auto;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer > div {
+  text-align: center;
+}
+
+.container {
+  height: 90vh;
 }
