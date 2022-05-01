@@ -1,31 +1,53 @@
-.phrase {
-  text-align: center;
-  font-size: 2em;
-  margin: 3em 0 1em 0;
+body {
+  margin: 0;
+  padding: 0;
 }
 
 h1 {
-  text-align: center;
-  margin-top: 2em;
+  color: #eee;
+  background-color: #444;
+  font-size: 3em;
   font-weight: 600;
-  font-size: 4em;
-}
-
-.btn {
+  
+  padding: 1em 0;
   text-align: center;
-}
-
-footer {
-  margin: 1em auto;
-  position: absolute;
-  bottom: 0;
   width: 100%;
 }
 
-footer > div {
-  text-align: center;
+footer {
+  color: #ddd;
+  background-color: #666;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  
+  position: absolute;
+  bottom: 0;
+  height: 3em;
+  width: 100%;
+}
+
+a {
+  color: white;
+}
+
+button:hover {
+  background-color: #aaa;
+  color: white;
 }
 
 .container {
-  height: 90vh;
+  min-height: 100vh;
+  position: relative;
+}
+
+.content {
+  padding-bottom: 3em;
+  text-align: center;
+}
+
+.phrase {
+  font-size: 2em;
+  margin: 2.5em 0 1.5em 0;
 }

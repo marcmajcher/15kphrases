@@ -15,15 +15,15 @@ function App() {
 
   return (
     <div className="container">
-      <h1>Fifteen Thousand Useful Phrases</h1>
-      <div className='phrase'>
-        {phrase}
-      </div>
-      <div className='btn'>
+      <section className='content'>
+        <h1>Fifteen Thousand Useful Phrases</h1>
+        <p className='phrase'>
+          {phrase}
+        </p>
         <button onClick={() => setPhrase(randomPhrase())}>New Phrase</button>
-      </div>
+      </section>
       <footer>
-        <div> via <a href="https://www.gutenberg.org/ebooks/18362">gutenberg</a></div>
+        <a href="https://www.gutenberg.org/ebooks/18362">Kleiser, 1917</a>
       </footer>
     </div>
   );
